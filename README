@@ -1,0 +1,40 @@
+This is а simple fade slider with fixed image sizes.
+It can be used as аn ads banner or something like this.
+
+It was created for MChS site.
+
+HTML code:
+-------------------------------------------------------------------------------
+    <div id="slider">
+        <ul class="slider-items">
+            ...
+            <li class="active">
+                <a href="#">
+                    <img src="/images/your-slide.png" />
+                    <span class="slider-item-capture">
+                        Your slide capture
+                    </span>
+                </a>
+            </li>
+            ...
+        </ul>
+        <div class="slider-bord">
+            <span id="slider-prev" class="slider-button">&lt;&lt;</span>
+            <span class="slider-circle">&bull;<span>&bull;</span>&bull;</span>
+            <span id="slider-next" class="slider-button">&gt;&gt;</span>
+        </div>
+    </div>
+-------------------------------------------------------------------------------
+
+
+Default options:
+-------------------------------------------------------------------------------
+    move : {            // Fade default options:
+        next:   true,   //     use prev-button as a next one
+        speed:  2000,   //     fade duration [ms]
+        min:    0.0,    //     min opacity
+        max:    1.0     //     max opacity
+    },
+    interval:   10000   // auto-switch duration [ms]
+                        // If it is 0, there is no auto-switching.
+-------------------------------------------------------------------------------

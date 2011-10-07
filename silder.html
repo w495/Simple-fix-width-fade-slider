@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />    
+    <title>Simple fade slider</title>
+    <link rel="stylesheet" type="text/css" media="all"  href="./css/styles.css" />
+</head>
+<body>
+    <div id="slider">
+        <ul class="slider-items">
+            <li class="active">
+                <a href="#">
+                    <img src="./images/slide1.png" />
+                    <span class="slider-item-capture">The first order</span>
+                </a>
+            </li>
+            <li >
+                <a href="#">
+                    <img src="./images/slide2.png" />
+                    <span class="slider-item-capture">The second order</span>
+                </a>
+            </li>        
+            <li >
+                <a href="#">
+                    <img src="./images/slide3.png" />
+                    <span class="slider-item-capture">The third order</span>
+                </a>
+            </li>
+        </ul>
+        <div class="slider-bar">
+            <a href="javascript:void(0);" id="slider-prev" class="slider-button">
+                &laquo;
+            </a>
+            <span class="slider-circle">
+                <span>&bull;</span>
+                <span class="slider-circle-c">&bull;</span>
+                <span>&bull;</span>
+            </span>
+            <a href="javascript:void(0);" id="slider-next" class="slider-button">
+                &raquo;
+            </a>
+        </div>
+    </div>
+</body>
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/slider.js"></script>
+</html>

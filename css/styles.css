@@ -1,0 +1,137 @@
+*{
+    /* reset */
+    padding:0px;
+    margin:0px;
+}
+
+#slider {
+    position:relative;
+}
+
+#slider ul.slider-items li {
+    top:0;
+    left:0;
+    display:block;
+    position:absolute;
+    z-index:8;
+}
+
+
+#slider ul.slider-items li a{
+    color: black;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+#slider  ul.slider-items li  {
+    vertical-align: middle;
+}
+
+#slider  ul.slider-items li  span.slider-item-capture{
+    /* view */
+        top:    340px;
+        left:   480px;
+        height: 30px;
+        width:  300px;
+        padding-top: 10px;
+        padding-left: 8px;
+        display:block;
+        position:absolute;
+        z-index:9;      
+        background-color: black;
+    /* text */
+        vertical-align: bottom;
+        color: white;
+        font-family: sans-serif;
+        font-size: 19px;
+        text-transform: uppercase;
+    /* rounded-corners */
+        -webkit-border-radius: 10px; 	/*Ch*/
+        -moz-border-radius: 10px; 		/*FF*/ 
+        border-radius: 10px; 			/*IE*/
+    /* border */
+        border-color: gray;
+        border-style: solid;
+        border-width: 2px;
+    /* opacity */
+        /* IE 5.5+*/
+            filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+        /* Mozilla 1.6 and less */
+            -moz-opacity: 0.7;
+        /* Konqueror 3.1, Safari 1.1 */
+            -khtml-opacity: 0.7;
+        /* CSS3 - Mozilla 1.7b +, Firefox 0.9 +, Safari 1.2+, Opera 9+ */
+            opacity: 0.7; 
+        /* for IE element, without width and height */
+            zoom: 1; 
+}
+
+#slider  ul.slider-items li  span.slider-item-capture:before {
+     content: "⚫ ";
+}
+   
+#slider ul.slider-items li.active {
+    z-index:10;
+}
+
+#slider ul.slider-items li.last-active {
+    z-index:9;
+}
+
+#slider div.slider-bar{
+    /* view */
+        top:0;
+        left:0;
+        height: 52px;
+        width: 800px;    
+        display:block;
+        position:absolute;
+        z-index:110;
+        background-color: black;
+    /* text */
+        text-align: center;
+        vertical-align: middle;
+        color: white;
+        font-family: sans-serif;
+        font-size: 30px;
+    /* opacity */
+        /* IE 5.5+*/
+            filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+        /* Mozilla 1.6 and less */
+            -moz-opacity: 0.7;
+        /* Konqueror 3.1, Safari 1.1 */
+            -khtml-opacity: 0.7;
+        /* CSS3 - Mozilla 1.7b +, Firefox 0.9 +, Safari 1.2+, Opera 9+ */
+            opacity: 0.7; 
+        /* for IE element, without width and height */
+            zoom: 1; 
+}
+
+#slider div.slider-bar span.slider-circle{
+    width: 650px;
+    margin: 0;
+    display:inline-block;
+    position:relative;
+    z-index:111;
+    text-align: center;
+}
+
+#slider div.slider-bar span.slider-circle span.slider-circle-c{
+    display:inline-block;
+    font-size: 35px;
+}
+
+#slider div.slider-bar a.slider-button{
+    color: #cccccc;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+#slider div.slider-bar a.slider-button:hover{
+    color: white;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
